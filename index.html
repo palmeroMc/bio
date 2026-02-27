@@ -1,150 +1,356 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Palmero's Biography</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="1800">
-    <style>
-      .hcont{
-        max-width:8.5in;
-      }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maki Palmero | Biography</title>
 
-      h1 {
-        font-size: 70px;
-        padding-top: 210px;
-      }
-      h1, h2 {
-        font-family: 'Crimson Pro', serif;
-        color: #3c6e71;
-      }
-      h2 {
-        text-shadow: 1.5px 1px gray;
-        background-color: #DDDCB0;
-        width: 200px;
-        text-align: center;
-      }
-      .cont {
-        font-family: 'DM Sans', 'Roboto', sans-serif;
-        background-color: #3c6e71;
-        padding: 20px;
-        max-width: auto;
-        margin-top: 500px;
-        line-height: 180%;
-        
-      }
-      .cy {
-        background-color: #f2f2f2;
-        padding: 20px;
-       
-      }
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-      .ty {
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
+<style>
 
-      .yy {
-        background-color: #e6e6e6;
-        padding: 20px;
-    
-      }
+/* =========================
+   GLOBAL
+========================= */
 
-      a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #3c6e71;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-family: 'DM Sans', 'Roboto', sans-serif;
-      
-    }
+p {
+  text-align: justify;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-       
-    </style>
-  </head>
-  <body>
-    <a style="color: #3c6e71; background-color: #ffffff;"href="https://palmeromc.github.io/Landing/">Back to Home</a>
-    <div align="center">
-    <div align="center" class="hcont">
-      <h1 id="top">LOOK WITHIN</h1>
-      <p><code>by Mary Christelle Palmero</code></p>
-      <hr width="860px">
-    </div>  
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#ffffff;
+  color:#353535;
+  line-height:1.9;
+}
 
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:120px 20px 60px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.top-section{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.top-section h1{
+  font-family:'Crimson Pro',serif;
+  font-size:60px;
+  color:#284b63;
+}
+
+.top-section p{
+  color:#3c6e71;
+}
+
+hr{
+  margin:30px auto;
+  width:80%;
+  border:0;
+  height:1px;
+  background:#d9d9d9;
+}
+
+/* =========================
+   NAV BUTTONS
+========================= */
+
+.section-nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:80px;
+  flex-wrap:wrap;
+}
+
+.section-nav a{
+  padding:8px 18px;
+  border-radius:6px;
+  background:#3c6e71;
+  color:#fff;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.section-nav a:hover{
+  background:#284b63;
+}
+
+/* =========================
+   BIO SECTIONS
+========================= */
+
+.bio-section{
+  margin-bottom:120px;
+}
+
+.bio-section h2{
+  font-family:'Crimson Pro',serif;
+  font-size:36px;
+  margin-bottom:25px;
+  color:#284b63;
+}
+
+.bio-section p{
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+.image-row{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.image-row img{
+  width:200px;
+  border-radius:8px;
+  object-fit:cover;
+}
+
+/* =========================
+   SECTION NAVIGATION
+========================= */
+
+.section-controls{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.section-controls a{
+  padding:8px 16px;
+  border-radius:6px;
+  font-size:14px;
+  background:#3c6e71;
+  color:#fff;
+  transition:0.3s;
+}
+
+.section-controls a:hover{
+  background:#284b63;
+}
+
+/* =========================
+   BACK TO HOME BUTTON
+========================= */
+
+.back-home{
+  position:fixed;
+  top:20px;
+  left:20px;
+  background:#284b63;
+  color:#fff;
+  padding:6px 14px;
+  border-radius:6px;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.back-home:hover{
+  background:#3c6e71;
+}
+
+/* =========================
+   FOOTER NOTE
+========================= */
+
+.footer-note{
+  text-align:center;
+  margin-top:60px;
+  color:#3c6e71;
+  font-size:14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .top-section h1{
+    font-size:40px;
+  }
+
+  .bio-section h2{
+    font-size:28px;
+  }
+
+  .section-controls{
+    flex-direction:column;
+    gap:10px;
+  }
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(53, 53, 53, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  color: #FFFFFF;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  position: relative;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #3c6e71;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MC Palmero</div>
+  <nav>
+    <a href="https://palmeromc.github.io/Landing/">Home</a>
+    <a href="https://palmeromc.github.io/bio/">Biography</a>
+    <a href="https://palmeromc.github.io/BLOGG1/">Blogs</a>
+    <a href="https://palmeromc.github.io/PhotoDump/">Gallery</a>
+    <a href="https://palmeromc.github.io/Media-Page/">Medias</a>
+    <a href="https://palmeromc.github.io/DreamPlacesToVisit/">Dream Places</a>
+    <a href="https://palmeromc.github.io/Landing/#bucketlist">Bucket List</a>
+    <a href="https://palmeromc.github.io/Landing/#contacts">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="top-section" id="top">
+    <h1>Look Within</h1>
+    <p style="text-align: center;"><code>by Mary Christelle Palmero</code></p>
+    <hr>
+  </div>
+
+  <div class="section-nav">
     <a href="#child">Childhood</a>
     <a href="#teen">Teenager</a>
     <a href="#college">College</a>
-    
-    <div align="justify" class="cont">
-       <br> 
-      <h2 id="child">Childhood years</h2>
-      <p class="yy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="Childhood"><strong>1</strong></sup>Learning to ride a bike was a thrilling experience for a child. <sup>2</sup>Me, personally, have experienced ridiculous moments upon learning how to ride one.
-        <sup>3</sup>Starting with one that has training wheels was the first step for me. <sup>4</sup>I was able to ride it comfortably within a short period of time. <sup>5</sup>After getting used to it, I decided to move forward with a bicycle alone. 
-        <sup>6</sup>Hopping on it was easy, but staying still… not so much. <sup>7</sup>I got so wobbly to the point where my gathered friends had to support me side-by-side. 
-        <sup>8</sup>Nervousness got less, but within just a few moments, my friends pushed and let go of me, making me wobble my way down a small steep hill at the end of our street. <sup>9</sup>In that very moment I was scared to death–holding my breath as if I was holding my soul. 
-        <sup>10</sup>I didn’t want to fall and get hurt, and most importantly, I didn’t want to hit another soul near my path. <sup>11</sup>The moment I landed on the ground, I was still unstable, but I didn’t fall nor hit another soul–thank God. 
-        <sup>12</sup>In fact, I held on much stronger and let the force from the steep ground push me forward, until I got the hang of it. <sup>13</sup>It was a quick thrilling moment for me, but right after that, I was able to ride a bicycle all on my own. <sup>14</sup>A core memory that shaped the kind of person I am. 
-        <sup>15</sup>My parents named me <strong>Mary Christelle</strong>, because my birth day was relevant to Mama Mary, <u>December 08</u> - <i>Feast of Immaculate Concepcion</i>. <sup>16</sup>No matter how pretty it sounds, I still prefer to be called by my nicknames, <b><i>Mc or Maki</i></b>. 
-        <sup>17</sup>My experience on learning how to ride a bike was significant, because then, I realized how scared yet adventurous my personality is. <sup>18</sup>I spent most of my childhood trying different activities, from different sports to different hobbies to different mini businesses. <sup>19</sup>I tried most of them with fear, yet my curiosity and hunger for experience kept me to the ground with my head held high. <sup>20</sup>Always aiming to the top, doing everything all at once to claim the highest prize among all. <sup><strong>21</strong></sup>But, little did I know, the knowledge I earn matters the most.</p> 
-        
-        <div style="text-align: center;">
-          <img src="tabs.jpg" alt="chubby child" style="width: 200px; border: 1px solid #ccc;">
-          <img src="cous.jpg" alt="cousins" style="width: 200px; border: 1px solid #ccc;">
-        </div>
+  </div>
 
-        <br>
-        <a href="#top">Back to Top</a>
-     
-        <br><br><br><br><br><br><br><br><br><br>
+  <!-- CHILDHOOD -->
+  <div class="bio-section" id="child">
+    <h2>Childhood Years</h2>
 
-     <h2 id="teen">Teenage years</h2>
-      <p class="ty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="Teenage"><strong>1</strong></sup>Stepping on my teenage years taught me the most emotional instances a person may encounter. 
-        <sup>2</sup>I experienced my first innocent love, first heartbreak, drastic grief from the day my father died, and too much anger due to reckless reasons. 
-        <sup>3</sup>Most moments are rooted from my will to experience. <sup>4</sup>The chaos started when I entered junior high. <sup>5</sup>I was 13yrs old, and most of the people surrounding me have already widened their social life. 
-        <sup>6</sup>As an introvert, I didn’t care much at first. <sup>7</sup>All I was thinking was socializing drains me so much I’d rather sulk to death. <sup>8</sup>Not until I got too attached to another individual who shares the same hobbies and sentiments as me. 
-        <sup>9</sup>I learnt how much I can offer to someone just for them to stay with me. <sup>10</sup>That’s when I felt pleasing other people matters a lot. <sup>11</sup>Thoughtfulness to them but not to myself. 
-        <sup>12</sup>I strived on most aspects of my teenage life just to have that kind of prize–to be appreciated. <sup>13</sup>Later on, I suffered from selflessness, but I did not know that it affects my people worse than I thought. 
-        <sup>14</sup>My thinking was shallow. <sup>15</sup>I often decide what's best for the people that care about me leading to a more shattered relationship. <sup>16</sup>Indecisive to my being, but decisive for others. 
-        <sup>17</sup>I became a troubled kid that lies about where she’s going just to meet up with the people I crave love from, lies for the reason I asked for the money for, and all other things I feel embarrassed now. 
-        <sup>18</sup>I also got to the point where I feel my anger higher than ever because of betrayals, abandonment, and not meeting expectations. <sup>19</sup>Regardless, my hunger to explore and to feel didn’t waver. <sup><strong>20</strong></sup>After everything, I still stood high, striving academically and personally, because that’s who I am.</p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="Childhood"><strong>1</strong></sup>Learning to ride a bike was a thrilling experience for a child. <sup>2</sup>Me, personally, have experienced ridiculous moments upon learning how to ride one. <sup>3</sup>Starting with one that has training wheels was the first step for me. <sup>4</sup>I was able to ride it comfortably within a short period of time. <sup>5</sup>After getting used to it, I decided to move forward with a bicycle alone. <sup>6</sup>Hopping on it was easy, but staying still… not so much. <sup>7</sup>I got so wobbly to the point where my gathered friends had to support me side-by-side. <sup>8</sup>Nervousness got less, but within just a few moments, my friends pushed and let go of me, making me wobble my way down a small steep hill at the end of our street. <sup>9</sup>In that very moment I was scared to death–holding my breath as if I was holding my soul. <sup>10</sup>I didn’t want to fall and get hurt, and most importantly, I didn’t want to hit another soul near my path. <sup>11</sup>The moment I landed on the ground, I was still unstable, but I didn’t fall nor hit another soul–thank God. <sup>12</sup>In fact, I held on much stronger and let the force from the steep ground push me forward, until I got the hang of it. <sup>13</sup>It was a quick thrilling moment for me, but right after that, I was able to ride a bicycle all on my own. <sup>14</sup>A core memory that shaped the kind of person I am. <sup>15</sup>My parents named me <strong>Mary Christelle</strong>, because my birth day was relevant to Mama Mary, <u>December 08</u> - <i>Feast of Immaculate Concepcion</i>. <sup>16</sup>No matter how pretty it sounds, I still prefer to be called by my nicknames, <b><i>Mc or Maki</i></b>. <sup>17</sup>My experience on learning how to ride a bike was significant, because then, I realized how scared yet adventurous my personality is. <sup>18</sup>I spent most of my childhood trying different activities, from different sports to different hobbies to different mini businesses. <sup>19</sup>I tried most of them with fear, yet my curiosity and hunger for experience kept me to the ground with my head held high. <sup>20</sup>Always aiming to the top, doing everything all at once to claim the highest prize among all. <sup><strong>21</strong></sup>But, little did I know, the knowledge I earn matters the most.
+    </p>
 
-        <br>
-
-        <div style="text-align: center;">
-          <img src="teen1.jpg" alt="sideview" style="width: 200px; border: 1px solid #ccc;">
-          <img src="teen2.jpg" alt="teen2" style="width: 200px; border: 1px solid #ccc;">
-          <img src="teen3.jpg" alt="teen3" style="width: 200px; border: 1px solid #ccc;">
-        </div>
-
-        <br>
-        <a href="#top">Back to Top</a>
-     
-        <br><br><br><br><br><br><br><br><br><br>
-    
-    <h2 id="college">College years</h2>
-    <p class="cy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="College"><strong>1</strong></sup>Before turning to college, I spent the 2 years of my senior year in a prestigious school, <strong>Pasig City Science High School</strong>. 
-      <sup>2</sup>I must say, I was trained well. <sup>3</sup>There was no day that I felt chill because of how demanding that school is when it comes to student’s performance. <sup>4</sup>Break times were used to prepare for the next class because there can be a surprise quiz or graded recitation. 
-      <sup>5</sup>The moment I turned college, some things were new to me, especially the system. <sup>6</sup>Fast paced school calendar, longer breaks, shorter discussions, and greater pressure. <sup>7</sup>To me, college is a brick that is wrapped with cotton foams, imitating a pillow. 
-      <sup>8</sup>Seems easy to acquire, but in reality it requires great effort to have and carry. <sup>9</sup>I’m unsure if other universities are also like that, but it is here in University of The East. <sup>10</sup>My first year turned out to be lighter than I expected, that’s why I decided to join an extracurricular that offers scholarships once I stayed long enough. 
-      <sup>11</sup>However, I wasn’t able to stay for long because of how conflicted my schedule became after getting to my 2nd year. <sup>12</sup>I even got to the point where I almost failed my Calculus class because of how determined I was on getting a scholarship. <sup>13</sup>In the end, I removed my membership and focused on academics instead. 
-      <sup>14</sup>Luckily, I was able to maintain my overall grade for the sem to keep my Pasig scholarship. <sup>15</sup>There may be regrets from joining that organization, but the experience, development, and connections I established remain significant to me, that’s why I’m still grateful for committing. <sup>16</sup>Now that I have more time for academics, pressure arises more. 
-      <sup>17</sup>Not seeing it as a danger coming at me, but an opportunity to do better and prepare myself for the near future of choosing a specific career. <sup>18</sup>I’m at the point of life where I feel immune to the emotion when things do not work out, living to the phrase <i>‘It is what it is.’</i> <sup>19</sup>Telling myself that my life does not revolve for one aspect at a time, but simultaneously with others. <sup><strong>20</strong></sup>I can finally say that I don’t live solely for others anymore, because all this time, <em>the appreciation that I really need the most  is from myself.</em></p>
-
-      <br>
-      <div style="text-align: center;">
-        <img src="col1.jpg" alt="col1" style="width: 200px; border: 1px solid #ccc;">
-        <img src="col2.jpg" alt="col2" style="width: 200px; border: 1px solid #ccc;">
-      </div>
-
-      <br>
-        <a href="#top">Back to Top</a>
-     
-        <br><br><br><br><br><br><br><br><br><br>
-
+    <div class="image-row">
+      <img src="tabs.jpg">
+      <img src="cous.jpg">
     </div>
-    
-    <p><i><code title="Date Created">December 18, 2025</code></i></p>
-  
-  </body>
+
+    <div class="section-controls">
+      <a href="#top">↑ Back to Top</a>
+      <a href="#teen">Next →</a>
+    </div>
+  </div>
+
+  <!-- TEENAGE -->
+  <div class="bio-section" id="teen">
+    <h2>Teenage Years</h2>
+
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="Teenage"><strong>1</strong></sup>Stepping on my teenage years taught me the most emotional instances a person may encounter. <sup>2</sup>I experienced my first innocent love, first heartbreak, drastic grief from the day my father died, and too much anger due to reckless reasons. <sup>3</sup>Most moments are rooted from my will to experience. <sup>4</sup>The chaos started when I entered junior high. <sup>5</sup>I was 13yrs old, and most of the people surrounding me have already widened their social life. <sup>6</sup>As an introvert, I didn’t care much at first. <sup>7</sup>All I was thinking was socializing drains me so much I’d rather sulk to death. <sup>8</sup>Not until I got too attached to another individual who shares the same hobbies and sentiments as me. <sup>9</sup>I learnt how much I can offer to someone just for them to stay with me. <sup>10</sup>That’s when I felt pleasing other people matters a lot. <sup>11</sup>Thoughtfulness to them but not to myself. <sup>12</sup>I strived on most aspects of my teenage life just to have that kind of prize–to be appreciated. <sup>13</sup>Later on, I suffered from selflessness, but I did not know that it affects my people worse than I thought. <sup>14</sup>My thinking was shallow. <sup>15</sup>I often decide what's best for the people that care about me leading to a more shattered relationship. <sup>16</sup>Indecisive to my being, but decisive for others. <sup>17</sup>I became a troubled kid that lies about where she’s going just to meet up with the people I crave love from, lies for the reason I asked for the money for, and all other things I feel embarrassed now. <sup>18</sup>I also got to the point where I feel my anger higher than ever because of betrayals, abandonment, and not meeting expectations. <sup>19</sup>Regardless, my hunger to explore and to feel didn’t waver. <sup><strong>20</strong></sup>After everything, I still stood high, striving academically and personally, because that’s who I am.
+    </p>
+
+    <div class="image-row">
+      <img src="teen1.jpg">
+      <img src="teen2.jpg">
+      <img src="teen3.jpg">
+    </div>
+
+    <div class="section-controls">
+      <a href="#child">← Previous</a>
+      <a href="#college">Next →</a>
+    </div>
+  </div>
+
+  <!-- COLLEGE -->
+  <div class="bio-section" id="college">
+    <h2>College Years</h2>
+
+    <p>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup title="College"><strong>1</strong></sup>Before turning to college, I spent the 2 years of my senior year in a prestigious school, <strong>Pasig City Science High School</strong>. <sup>2</sup>I must say, I was trained well. <sup>3</sup>There was no day that I felt chill because of how demanding that school is when it comes to student’s performance. <sup>4</sup>Break times were used to prepare for the next class because there can be a surprise quiz or graded recitation. <sup>5</sup>The moment I turned college, some things were new to me, especially the system. <sup>6</sup>Fast paced school calendar, longer breaks, shorter discussions, and greater pressure. <sup>7</sup>To me, college is a brick that is wrapped with cotton foams, imitating a pillow. <sup>8</sup>Seems easy to acquire, but in reality it requires great effort to have and carry. <sup>9</sup>I’m unsure if other universities are also like that, but it is here in University of The East. <sup>10</sup>My first year turned out to be lighter than I expected, that’s why I decided to join an extracurricular that offers scholarships once I stayed long enough. <sup>11</sup>However, I wasn’t able to stay for long because of how conflicted my schedule became after getting to my 2nd year. <sup>12</sup>I even got to the point where I almost failed my Calculus class because of how determined I was on getting a scholarship. <sup>13</sup>In the end, I removed my membership and focused on academics instead. <sup>14</sup>Luckily, I was able to maintain my overall grade for the sem to keep my Pasig scholarship. <sup>15</sup>There may be regrets from joining that organization, but the experience, development, and connections I established remain significant to me, that’s why I’m still grateful for committing. <sup>16</sup>Now that I have more time for academics, pressure arises more. <sup>17</sup>Not seeing it as a danger coming at me, but an opportunity to do better and prepare myself for the near future of choosing a specific career. <sup>18</sup>I’m at the point of life where I feel immune to the emotion when things do not work out, living to the phrase <i>‘It is what it is.’</i> <sup>19</sup>Telling myself that my life does not revolve for one aspect at a time, but simultaneously with others. <sup><strong>20</strong></sup>I can finally say that I don’t live solely for others anymore, because all this time, <em>the appreciation that I really need the most is from myself.</em>
+    </p>
+
+    <div class="image-row">
+      <img src="col1.jpg">
+      <img src="col2.jpg">
+    </div>
+
+    <div class="section-controls">
+      <a href="#teen">← Previous</a>
+      <a href="#top">↑ Back to Top</a>
+      <a href="https://palmeromc.github.io/BLOGG1/">Proceed to Blogs →</a>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <i><code>December 18, 2025</code></i>
+  </div>
+
+</div>
+
+</body>
 </html>
